@@ -8,7 +8,7 @@ from commands import init_db_command, generate_admin_command
 from admin import admin
 from website import website
 from auth import login_manager
-from payment import payment
+# from payment import payment
 # from flask_ngrok import run_with_ngrok
 
 
@@ -30,7 +30,7 @@ login_manager.init_app(app)
 
 app.register_blueprint(admin)
 app.register_blueprint(website)
-app.register_blueprint(payment)
+# app.register_blueprint(payment)
 
 app.cli.add_command(init_db_command)
 app.cli.add_command(generate_admin_command)
