@@ -1,0 +1,147 @@
+{% extends "website-layout.html" %}
+{% block title %} Parcel Forwarder Home {% endblock %}
+{% block content %}
+    <!-- Full Width Banner Start -->
+    <div class="full-width-banner">
+    <div class="slider-wrapper theme-nivo">
+    <div id="slider" class="nivoSlider">
+    <img alt="image" src="{{ url_for('static', filename='images/banner/banner-1.jpg') }}" />
+    <img alt="image" src="{{ url_for('static', filename='images/banner/banner-2.jpg') }}" />
+    </div>
+    <div class="slider-contents">
+    <div class="">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <div class="banner-tagline wow fadeInDown">
+    <h1 class="title_left">We love shipping your beloved shopping to you</h1>
+    <!--<p>Lorem ispum is a dummy text. Lorem ispum is a dummy text. Lorem ispum is a dummy text. Lorem ispum is a dummy text. </p>-->
+    <!--<div class="btn_style1"><a class="bgcolor1 text_white" href="#">Learn How It Works</a></div>-->
+    </div>
+    </div>
+    <div class="clearfix"></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <!-- Full Width Banner End -->
+    <!-- How It Works Section -->
+    <div class="container pad-bot-60 steps_section">
+    <div class="row">
+    <div class="col-md-4 col-sm-4 text-center">
+    <div class="tile wow fadeInDown">
+    <div class="step_img bgcolor1"><img src="{{ url_for('static', filename='images/services-process/address.png') }}" alt="Service Image"/></div>
+    <p class="fw_5">
+    Shop</p>
+    <a class="link_btn" href="#">Sign up for a unique, tax-free UK address with an smooth and affordable plan. Start shopping your favorite products right away</a>
+    </div>
+    </div>
+    <div class="col-md-4 col-sm-4 text-center">
+    <div class="tile wow fadeInDown">
+    <div class="step_img bgcolor2"><img src="{{ url_for('static', filename='images/services-process/checkout.png') }}" alt="Service Image"/></div>
+    <p class="fw_5">
+    Ship</p>
+    <a class="link_btn" href="#">Deliver your favorite shopped products to the virtual delivery address with our parcel forwarding service.</a>
+    </div>
+    </div>
+    <div class="col-md-4 col-sm-4 text-center step_arrow_hide">
+    <div class="tile wow fadeInDown">
+    <div class="step_img bgcolor1"><img src="{{ url_for('static', filename='images/services-process/packages.png') }}" alt="Service Image"/></div>
+    <p class="fw_5">Re-Ship</p>
+    <a class="link_btn" href="#">We receive your products at our warehouse or your virtual UK address and reship it your home address with a minimal shipping cost!</a>
+    </div>
+    </div>
+    </div>
+    </div>
+    <!-- End How It Works Section -->
+    <!-- About Us Section -->
+    <section class="about-company ">
+    <div class="container">
+    <div class="row">
+    <div class="col-md-12">
+    <h2 class="small-line fancy-heading text-center mob-title-left">Take a breath</h2>
+    </div>
+    </div>
+    <div class="row">
+    <div class="col-md-6 col-sm-6 about_img">
+    <img src="{{ url_for('static', filename='images/about-company.png') }}" class="img-responsive" alt="About Company">
+    </div>
+    <div class="col-md-6 col-sm-6 mar-top-50-desktop">
+        <p class="feature_text">
+          Once we have confirmed the parcel forwarding order we send you a tracking number. Now it is time for you to relax and get your online shopped product delivered to you.
+            It is not only regular mail that we receive and forward for you. If you are worried about sending private, signed or confidential documents, that you are not able to go around and deliver in person, then know that your parcel is secure with us. You can take the worries off your mind as your parcel’s security is forefront to us.
+            You can add an impression of prestige to your business partners or colleagues by letting them view our virtual UK address to assure them that you are delivering from a prestigious place in the UK. Or you can choose to be discreet and hide your virtual address for whatever reasons.
+            We add value to your business and personal lives and keep your mail safe and sound until it is delivered to your preferred address.
+            *Note: All mails should be duty paid
+            *For parcels weighing less than 2 kg, you can get a cheaper quote from our Royal Mail delivery service with a fast track process.
+        </p>
+    </div>
+    </div>
+    </div>
+    </section>
+    <!-- End About Us Section -->
+    <!-- Start Testimonial Section -->
+    <section class="section-parallax no-margin-bottom with-overlay no-padding testimonial_section" style="background-image:url('./images/testimonial-bg.jpg');">
+    <div class="overlay" style="background-color: rgba(255, 131, 25, 0.9);">
+    <div class="container">
+    <div class="row text-center text-light">
+    <div class="col-md-12 quote_icon">
+    <h2 class="small-line fancy-heading text-center mob-title-center">What Our Customer Says</h2>
+    </div>
+    <div class="col-md-6 col-md-offset-3 text-center">
+    <div class="owl-carousel owl-theme owl-theme-light text-testimonial text-testimonial-light text-center" data-items="1" data-items-desktop="1" data-items-desktop-small="[991,1]" data-items-tablet="[767,1]" data-pagination-speed="200" data-auto-height="true">
+    <div class="item">
+    <p>"With Parcel Forwarder, I feel like I'm on a roll. It's been totally worth it!"</p>
+    <div class="owl-text-info">
+    <h5>John Smith<br/>Administrator, <a href="link">XYZ Company</a></h5>
+    <i class="fa fa-star fa-clear"></i><i class="fa fa-star fa-clear"></i><i class="fa fa-star fa-clear"></i><i class="fa fa-star fa-clear"></i><i class="fa fa-star-half fa-clear"></i>
+    </div>
+    </div>
+    <div class="item">
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+    <div class="owl-text-info">
+    <h5>Customer Name<br>Job Title, <a href="link">Company</a></h5>
+    <i class="fa fa-star fa-clear"></i><i class="fa fa-star fa-clear"></i><i class="fa fa-star fa-clear"></i><i class="fa fa-star fa-clear"></i><i class="fa fa-star fa-clear"></i>
+    </div>
+    </div>
+    <div class="item">
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. </p>
+    <div class="owl-text-info">
+    <h5>ABC<br>CEO, <a href="link">Company</a></h5>
+    <i class="fa fa-star fa-clear"></i><i class="fa fa-star fa-clear"></i><i class="fa fa-star fa-clear"></i>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </section>
+    <!-- End Testimonial Section -->
+    <!-- Start Clients Logo Section -->
+    <div class="clients_section">
+    <div class="container">
+    <div class="row text-center">
+    <div class="col-md-12 text-center">
+    <div class="client_logos"><img src="{{ url_for('static', filename='images/clients/clients.jpg') }}" class="img-responsive" alt="Clients Logo" />  </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <!-- End Clients Logo Section -->
+    <!-- Call To Action Section -->
+    <div class="call_to_action">
+    <div class="container">
+    <div class="row">
+    <div class="col-md-12">
+    <h2 class="small-line fancy-heading-lrg text-center mob-title-center">Ready to Shop & Ship?</h2>
+    </div>
+    </div>
+    <div class="row text-center">
+    <div class="col-md-12 text-center">
+    <div class="tagline">All you need is a membership to instantly get your MyUS address.</div>
+    <div class="btn_style1"><a class="bgcolor1 text_white" href="#">Sign Up</a></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <!-- End Call To Action Section -->
+{% endblock %}
